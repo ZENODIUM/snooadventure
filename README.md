@@ -1,5 +1,5 @@
 # Ever wanted your Snoo to create its own adventure?
-# Now’s your chance Snoo Doodle Quest 🎨
+# Now’s your chance **Snoo Doodle Quest** 🎨
 
 Snoo Doodle Quest is a creative and interactive platformer game where players can doodle their own levels by drawing terrain and setting challenges. Once a level is created and saved, players can attempt to complete it as quickly as possible. The fastest times will be recorded on each level's leaderboard.
 
