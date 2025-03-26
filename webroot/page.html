@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="UTF-8" />
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 style="font-family: Pangolin; color: #FF4500; text-shadow: 1px 1px 3px rgb(98, 98, 98);">Quest of <span id="username">Guest</span></h2>
+
+    <!-- Add this after the color picker -->
+<div id="level-name-input" style="display: none;">
+  <input type="text" id="levelName" placeholder="Enter Quest name" autocomplete="off" style="font-family: Pangolin;">
+</div>
+    <!-- Add this inside the <body> -->
+      
+<div id="timer" style="font-family: Pangolin;">Time: 0s</div>
+<div class="pin">
+  <div class="shadow"></div>
+  <div class="metal"></div>
+  <div class="bottom-circle"></div>
+</div>
+    <canvas id="drawingCanvas"></canvas>
+    <div id="error-message" style="display:none;font-family:Pangolin; color: #FF4500; padding: 10px; border: 2px solid #FF4500; margin: 10px;"></div>
+    <div class="button-container">
+      <span id="btn-save" style="align-items:center;text-align: center;justify-content: center;font-family: Pangolin;">Save</span>
+      <span id="btn-clear" style="font-family: Pangolin;">Clear</span>
+    </div>
+    
+    <div class="color-picker">
+      <div class="color-button color-black" data-color="black" style="background-color: black;"><div></div></div>
+      <div class="color-button color-red" data-color="red" style="background-color: red;"><div></div></div>
+      <div class="color-button color-lime" data-color="lime" style="background-color: lime;"><div></div></div>
+      <div class="color-button color-blue" data-color="blue" style="background-color: blue;"><div></div></div>
+      <div class="color-button color-yellow" data-color="yellow" style="background-color: yellow;"><div></div></div>
+    </div>
+
+    
+
+    <!-- Left, Jump, Right buttons - hidden by default -->
+<div class="navigation-buttons" style="display: none;">
+  <span id="btn-left">←</span>
+  <span id="btn-jump">↑</span>
+  <span id="btn-right">→</span>
+</div>
+
+
+    
+    <script type="application/javascript" src="script.js"></script>
+  </body>
+</html>
